@@ -6,34 +6,63 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    class CuentaDTO
+    /// <summary>
+    /// Clase pública CuentaDTO.
+    /// La clase permite manipular las cuentas de email que vamos a utilizar para poder descargar o enviar mails
+    /// </summary>
+    public class CuentaDTO
     {
-        private string iNombre;
-        private string iID;
-        private string iDireccion;
-        private string iServicio;
-        private string iContraseña;
+        private int iIDCuenta; // ID de la cuenta que utilizamos
+        private string iNombre; // Nombre de la cuenta. El nombre es unívoco
+        private string iDireccion; // Dirección de correo de la cuenta
+        private string iServicio; // Servicio de la cuenta {Yahoo, Gmail, Hotmail/Live, etc.}
+        private string iContraseña; // Contraseña de la cuenta de correo
+        private bool iActivo; // True si la cuenta está activa, false en caso contrario
+        private int iCantidadCorreos; // Cantidad de correos máximo que vamos a descargar
 
 
-        CuentaDTO(string pNombre, string pID, string pDireccion, string pServicio, string pContraseña)
+        // Constructores de la clase CuentaDTO
+        public CuentaDTO(string pNombre, string pDireccion, string pServicio, string pContraseña, bool pActivo)
         {
             this.iNombre = pNombre;
-            this.iID = pID;
             this.iDireccion = pDireccion;
             this.iServicio = pServicio;
             this.iContraseña = pContraseña;
+            this.iActivo = pActivo;
         }
 
+        public CuentaDTO(int pIDCuenta, string pNombre, string pDireccion, string pServicio, string pContraseña, bool pActivo)
+        {
+            this.iIDCuenta = pIDCuenta;
+            this.iNombre = pNombre;
+            this.iDireccion = pDireccion;
+            this.iServicio = pServicio;
+            this.iContraseña = pContraseña;
+            this.iActivo = pActivo;
+        }
+
+        public CuentaDTO(int pIDCuenta, string pNombre, string pDireccion, string pServicio, string pContraseña, bool pActivo, int pCantidadCorreos)
+        {
+            this.iIDCuenta = pIDCuenta;
+            this.iNombre = pNombre;
+            this.iDireccion = pDireccion;
+            this.iServicio = pServicio;
+            this.iContraseña = pContraseña;
+            this.iActivo = pActivo;
+            this.iCantidadCorreos = pCantidadCorreos;
+        }
+
+        // Propiedades de CuentaDTO
         public string Nombre
         {
             get { return this.iNombre; }
             set { this.iNombre = value; }
         }
 
-        public string ID
+        public int ID
         {
-            get { return this.iID; }
-            set { this.iID = value; }
+            get { return this.iIDCuenta; }
+            set { this.iIDCuenta = value; }
         }
 
         public string Direccion
@@ -52,6 +81,18 @@ namespace DTO
         {
             get { return this.iContraseña; }
             set { this.iContraseña = value; }
+        }
+
+        public bool Activo
+        {
+            get { return this.iActivo; }
+            set { this.iActivo = value; }
+        }
+
+        public int CantidadCorreos
+        {
+            get { return this.iCantidadCorreos; }
+            set { this.iCantidadCorreos = value; }
         }
     }
 }

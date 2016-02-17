@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="richTextBoxAyuda.Text" xml:space="preserve">
+    <value>Sección de ayuda de MailApp
+Al incio del programa, usted deberá seleccionar algunas de las opciones que aparecen en el menú superior de la Pantalla Inicial de MailApp. Estas opciones, se describen a continuación:
+- CUENTAS
+En la sección de Cuentas encontrará las siguientes opciones:
+
+* Opción "Ver cuentas": donde encontrará información acerca de las cuentas que están cargadas en el programa. Podrá ver información sobre la dirección de email de usuario, el nombre de la cuenta, el servicio (Gmail, Yahoo, Hotmail, etc) y la contraseña que ha sido proporcionada.
+
+* Opción "Agregar nueva cuenta": en esta opción usted podrá cargar una nueva cuenta de correo al programa, donde se le facilitará un formulario donde podrá suministrar la información de la dirección de correo que utilizará, un nombre con cual identificarla, el servicio que utiliza (Gmail, Yahoo, Hotmail, etc) y la contraseña actual de la dirección de correo. Aclaración: el nombre con el cual identificará la cuenta debe ser único y no se puede repetir. En caso de estar repetido, el programa generará un aviso para que utilice un nuevo nombre e intente nuevamente.
+
+* Opción "Modificar cuenta": en esta opción el programa le facilitará un formulario en donde usted podrá elegir la cuenta a la que desee modificar los datos. Una vez que haya cargado los datos correctamente, estará habilitado para poder guardarlos. Luego el sistema generará un aviso confirmando los cambios realizados.
+
+* Opción "Eliminar cuenta": en esta opción el programa le facilitará un formulario donde tendrá acceso a las cuentas que están ya cargadas. Luego podrá seleccionar una de ellas y podrá eliminarla. Aclaración: el sistema marcará la cuenta seleccionada como "Inactiva", lo cual provocará que no se pueda utilizar en el programa. Debe tener precaución a la hora de elegir qué cuenta desea eliminar del sistema.
+
+- CORREOS
+En la sección de Correos encontrará las siguientes opciones:
+
+* Opción "Ver mails": en esta opción, el programa le facilitará un formulario donde puede visualizar los correos que han sido persistidos. Podrá seleccionar de qué cuenta quiere visualizar los mails y filtrar por "Enviados", "Recibidos", "Borradores" o simplemente elegir la opción "Todos" donde se mostrarán todos los mails de la cuenta seleccionada anteriormente. En el caso de que no elija ninguna cuenta y seleccione la opción de filtrado "&lt;Todos&gt;", el programa mostrará en pantalla los mails de todas las cuentas disponibles.
+
+* Opción "Enviar mail": en esta opción el programa le facilitará un formulario donde podrá redactar un mail para poder enviarlo posteriormente. Puede elegir el remitente del mail entre las cuentas que se hallen cargadas en el programa y luego cargar entre uno o varios destinatarios, si desea enviarlo con copia o copia oculta, declarar el asunto, redactar el cuerpo del mensaje y adjuntar archivos. Una vez listo, el programa controlará que todos los campos necesarios estén completos y enviará el mensaje. Luego generará un aviso confirmando el éxito de la operación.
+
+* Opción "Descargar mails": en esta opción, usted podrá seleccionar de qué cuenta descargar los mails. El programa tratará de conectarse a su casilla de correo, descargar todos los mails y mostrarlos en pantalla. Estarán separados entre Mensajes enviados, Mensajes Recibidos, y Otros Mensajes, donde usted podrá elegir el que desee y el programa mostrará la información del mismo: cuerpo, asunto, remitente, destinatario(s), CC, CCO, archivos adjuntos (si posee, en caso contrario mostrará "&lt;Ninguno&gt;") y fecha del mail.
+
+- CONFIGURACIÓN
+En la sección de Configuración encontrará la opción de "Ver configuración de cuentas". En esta opción, el programa mostrará información sobre la configuración de las cuentas cargadas, como el nombre de la cuenta, dirección de la cuenta, contraseña, cantidad de correos a descargar, entre otros datos.
+
+- DESARROLLADORES
+La sección Desarrolladores solamente de información al usuario. En ella encontrará las siguientes opciones:
+
+* Opción "Ayuda": la ventana actual que está visualizando.
+
+* Opción "Contacto": en esta opción, encontrará información para contactarse con los desarrolladores del programa MailApp, como Facebook, dirección de correo, teléfono, etc.
+
+* Opción "Acerca de...": en esta opción encontrará información acerca de MailApp, como su número de versión, por quién fue desarrollado, derechos reservados, etc.</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAUFyEOExYhVRMWIVUUFyEcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAFBciThMWIeATFiH9ExYh/RMWIesTFiFsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAUFyLFFBci/hQXIv4UFyL+FBci/hQXIucVGCMIAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAFxkkARYZI/0WGSP+Fhkj/xYZI/8WGSP+Fhkj/RYZJCoAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYGiUBGBsl5xgbJf4YGyX+GBsl/hgbJf4YGiX9GBolFQAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        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
+        wD/4A4A//AAAP/wAAH/+AAD//wAB///AA/8=
+</value>
+  </data>
+</root>

@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{86F15CD7-3F31-4E11-B19A-E6027E9BEBBB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GUI</RootNamespace>
+    <AssemblyName>MailApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Santi.zac\Desktop\MailApp\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>es-AR</TargetCulture>
+    <ProductName>MailApp</ProductName>
+    <PublisherName>MailApp</PublisherName>
+    <SuiteName>MailApp</SuiteName>
+    <ApplicationRevision>12</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>E426960E0FD05DF4171A478F172F1DAD7C6BBA2E</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>GUI_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>57135.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcercaDe.Designer.cs">
+      <DependentUpon>AcercaDe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarCuenta.Designer.cs">
+      <DependentUpon>AgregarCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ayuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ayuda.Designer.cs">
+      <DependentUpon>Ayuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contacto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contacto.Designer.cs">
+      <DependentUpon>Contacto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DescargarMensajes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DescargarMensajes.Designer.cs">
+      <DependentUpon>DescargarMensajes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarCuenta.Designer.cs">
+      <DependentUpon>EliminarCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enviando.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enviando.Designer.cs">
+      <DependentUpon>Enviando.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnviarMail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnviarMail.Designer.cs">
+      <DependentUpon>EnviarMail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Espere.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Espere.Designer.cs">
+      <DependentUpon>Espere.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarCuenta.Designer.cs">
+      <DependentUpon>ModificarCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaPadre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaPadre.Designer.cs">
+      <DependentUpon>PantallaPadre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VerCorreos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerCorreos.Designer.cs">
+      <DependentUpon>VerCorreos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VerCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerCuentas.Designer.cs">
+      <DependentUpon>VerCuentas.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AcercaDe.resx">
+      <DependentUpon>AcercaDe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarCuenta.resx">
+      <DependentUpon>AgregarCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ayuda.resx">
+      <DependentUpon>Ayuda.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contacto.resx">
+      <DependentUpon>Contacto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DescargarMensajes.resx">
+      <DependentUpon>DescargarMensajes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarCuenta.resx">
+      <DependentUpon>EliminarCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enviando.resx">
+      <DependentUpon>Enviando.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnviarMail.resx">
+      <DependentUpon>EnviarMail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Espere.resx">
+      <DependentUpon>Espere.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarCuenta.resx">
+      <DependentUpon>ModificarCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaPadre.resx">
+      <DependentUpon>PantallaPadre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="VerCorreos.resx">
+      <DependentUpon>VerCorreos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerCuentas.resx">
+      <DependentUpon>VerCuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Controladores\Controladores.csproj">
+      <Project>{2425a2fa-251e-40eb-bee7-e38e962c33d3}</Project>
+      <Name>Controladores</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{c152ba21-5992-4bf1-aca3-fccc80d5fd52}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Exportadores\Exportadores.csproj">
+      <Project>{b33211f0-018b-4344-9882-6f239791b135}</Project>
+      <Name>Exportadores</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OpenPop\OpenPop.csproj">
+      <Project>{75b3e0df-61c3-4643-ab47-dbe1cfe3d303}</Project>
+      <Name>OpenPop</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Persistencia\Persistencia.csproj">
+      <Project>{3f44dfac-628c-4614-a3b5-f3aeff3d5a66}</Project>
+      <Name>Persistencia</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiciosCorreo\ServiciosCorreo.csproj">
+      <Project>{cc467136-d983-4755-85b8-e736baa7a98b}</Project>
+      <Name>ServiciosCorreo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="57135.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
