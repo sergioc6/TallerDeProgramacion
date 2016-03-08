@@ -1,4 +1,4 @@
-OpenPOP.NET code repository
+Proyecto final de Taller de programacion
+MailApp
 ====
-
-See our [project website](http://hpop.sourceforge.net/) for more information.
+Cliente de correos
